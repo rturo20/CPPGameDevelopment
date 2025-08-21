@@ -1,0 +1,3 @@
+/home/pi/Code/cpp/GameDevelopment/SDL2006/build/CMakeFiles/sdl_bounce.dir
+/home/pi/Code/cpp/GameDevelopment/SDL2006/build/CMakeFiles/edit_cache.dir
+/home/pi/Code/cpp/GameDevelopment/SDL2006/build/CMakeFiles/rebuild_cache.dir
