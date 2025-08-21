@@ -2,6 +2,7 @@
 #define BALL_HPP
 
 #include <SDL2/SDL.h>
+class CollisionSystem;  // Forward declaration
 
 class Ball {
 public:
@@ -11,16 +12,8 @@ public:
     void update(float dt);
     void render(SDL_Renderer* renderer) const;
     
-    // Getters
-    inline float getX() const { return x_; }
-    inline float getY() const { return y_; }
-    inline float getVX() const { return vx_; }
-    inline float getVY() const { return vy_; }
-    inline int getRadius() const { return radius_; }
-    
-    // Setters
-    inline void setPosition(float x, float y) { x_ = x; y_ = y; }
-    inline void setVelocity(float vx, float vy) { vx_ = vx; vy_ = vy; }
+    // Give CollisionSystem access to the Ball class's private members
+    friend class CollisionSystem;  
     
 private:
     float x_, y_;        // Position
