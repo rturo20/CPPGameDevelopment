@@ -1,8 +1,9 @@
-CMakeFiles/sdl_bounce.dir/main.cpp.o: \
- /home/pi/Code/cpp/GameDevelopment/SDL2006/main.cpp \
- /usr/include/stdc-predef.h /usr/include/SDL2/SDL.h \
- /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
- /usr/include/SDL2/SDL_config.h \
+CMakeFiles/sdl_bounce.dir/HUD.cpp.o: \
+ /home/pi/Code/cpp/GameDevelopment/SDL2006/HUD.cpp \
+ /usr/include/stdc-predef.h \
+ /home/pi/Code/cpp/GameDevelopment/SDL2006/HUD.hpp \
+ /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
+ /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/aarch64-linux-gnu/SDL2/_real_SDL_config.h \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
  /usr/include/SDL2/close_code.h \
@@ -211,7 +212,11 @@ CMakeFiles/sdl_bounce.dir/main.cpp.o: \
  /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
- /usr/include/c++/12/bits/basic_string.tcc /usr/include/c++/12/iomanip \
+ /usr/include/c++/12/bits/basic_string.tcc /usr/include/c++/12/sstream \
+ /usr/include/c++/12/istream /usr/include/c++/12/ios \
+ /usr/include/c++/12/exception /usr/include/c++/12/bits/exception_ptr.h \
+ /usr/include/c++/12/bits/cxxabi_init_exception.h \
+ /usr/include/c++/12/typeinfo /usr/include/c++/12/bits/nested_exception.h \
  /usr/include/c++/12/bits/ios_base.h /usr/include/c++/12/ext/atomicity.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/gthr.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/gthr-default.h \
@@ -232,32 +237,24 @@ CMakeFiles/sdl_bounce.dir/main.cpp.o: \
  /usr/include/c++/12/bits/locale_classes.tcc \
  /usr/include/c++/12/system_error \
  /usr/include/aarch64-linux-gnu/c++/12/bits/error_constants.h \
- /usr/include/c++/12/stdexcept /usr/include/c++/12/exception \
- /usr/include/c++/12/bits/exception_ptr.h \
- /usr/include/c++/12/bits/cxxabi_init_exception.h \
- /usr/include/c++/12/typeinfo /usr/include/c++/12/bits/nested_exception.h \
- /usr/include/c++/12/locale /usr/include/c++/12/bits/locale_facets.h \
- /usr/include/c++/12/cwctype /usr/include/wctype.h \
- /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/c++/12/stdexcept /usr/include/c++/12/streambuf \
+ /usr/include/c++/12/bits/streambuf.tcc \
+ /usr/include/c++/12/bits/basic_ios.h \
+ /usr/include/c++/12/bits/locale_facets.h /usr/include/c++/12/cwctype \
+ /usr/include/wctype.h /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/ctype_base.h \
- /usr/include/c++/12/streambuf /usr/include/c++/12/bits/streambuf.tcc \
  /usr/include/c++/12/bits/streambuf_iterator.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/ctype_inline.h \
  /usr/include/c++/12/bits/locale_facets.tcc \
+ /usr/include/c++/12/bits/basic_ios.tcc /usr/include/c++/12/ostream \
+ /usr/include/c++/12/bits/ostream.tcc \
+ /usr/include/c++/12/bits/istream.tcc \
+ /usr/include/c++/12/bits/sstream.tcc /usr/include/c++/12/iomanip \
+ /usr/include/c++/12/locale \
  /usr/include/c++/12/bits/locale_facets_nonio.h /usr/include/c++/12/ctime \
  /usr/include/aarch64-linux-gnu/c++/12/bits/time_members.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/12/bits/codecvt.h \
  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
  /usr/include/c++/12/bits/locale_conv.h \
- /usr/include/c++/12/bits/quoted_string.h /usr/include/c++/12/sstream \
- /usr/include/c++/12/istream /usr/include/c++/12/ios \
- /usr/include/c++/12/bits/basic_ios.h \
- /usr/include/c++/12/bits/basic_ios.tcc /usr/include/c++/12/ostream \
- /usr/include/c++/12/bits/ostream.tcc \
- /usr/include/c++/12/bits/istream.tcc \
- /usr/include/c++/12/bits/sstream.tcc \
- /home/pi/Code/cpp/GameDevelopment/SDL2006/Ball.hpp \
- /home/pi/Code/cpp/GameDevelopment/SDL2006/Rectangle.hpp \
- /home/pi/Code/cpp/GameDevelopment/SDL2006/CollisionSystem.hpp \
- /home/pi/Code/cpp/GameDevelopment/SDL2006/HUD.hpp
+ /usr/include/c++/12/bits/quoted_string.h

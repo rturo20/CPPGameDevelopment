@@ -1830,6 +1830,426 @@
 			"value" : ""
 		},
 		{
+			"name" : "SDL2_TTF_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/usr/include/SDL2;-D_REENTRANT;-I/usr/include/harfbuzz;-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/glib-2.0;-I/usr/lib/aarch64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "SDL2_TTF_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-D_REENTRANT"
+		},
+		{
+			"name" : "SDL2_TTF_FOUND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "SDL2_TTF_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "SDL2_TTF_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include/SDL2;/usr/include/harfbuzz;/usr/include/freetype2;/usr/include/libpng16;/usr/include/glib-2.0;/usr/lib/aarch64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "SDL2_TTF_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/lib/aarch64-linux-gnu;-lSDL2_ttf;-lSDL2"
+		},
+		{
+			"name" : "SDL2_TTF_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/aarch64-linux-gnu"
+		},
+		{
+			"name" : "SDL2_TTF_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "SDL2_ttf;SDL2"
+		},
+		{
+			"name" : "SDL2_TTF_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/aarch64-linux-gnu"
+		},
+		{
+			"name" : "SDL2_TTF_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_MODULE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "SDL2_ttf"
+		},
+		{
+			"name" : "SDL2_TTF_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr"
+		},
+		{
+			"name" : "SDL2_TTF_SDL2_ttf_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_SDL2_ttf_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_SDL2_ttf_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_SDL2_ttf_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/usr/include/SDL2;-D_REENTRANT;-I/usr/include/harfbuzz;-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/glib-2.0;-I/usr/lib/aarch64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-D_REENTRANT"
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include/SDL2;/usr/include/harfbuzz;/usr/include/freetype2;/usr/include/libpng16;/usr/include/glib-2.0;/usr/lib/aarch64-linux-gnu/glib-2.0/include"
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/lib/aarch64-linux-gnu;-lSDL2_ttf;-lSDL2;-lm;-lasound;-lm;-ldl;-lpthread;-lpulse-simple;-lpulse;-pthread;-lsamplerate;-lX11;-lXext;-lXcursor;-lXi;-lXfixes;-lXrandr;-lXss;-ldrm;-lgbm;-lwayland-egl;-lwayland-client;-lwayland-cursor;-lxkbcommon;-ldecor-0;-lpthread;-lrt;-L/usr/lib/aarch64-linux-gnu;-lharfbuzz;-pthread;-lm;-L/usr/lib/aarch64-linux-gnu;-L/usr/lib/aarch64-linux-gnu;-L/usr/lib/aarch64-linux-gnu;-lz;-lm;-lz;-lm;-L/usr/lib/aarch64-linux-gnu;-L/usr/lib/aarch64-linux-gnu;-lz;-L/usr/lib/aarch64-linux-gnu;-lbrotlicommon;-lgraphite2;-lglib-2.0;-pthread;-lm;-L/usr/lib/aarch64-linux-gnu;-lpcre2-8;-lfreetype;-L/usr/lib/aarch64-linux-gnu;-L/usr/lib/aarch64-linux-gnu;-lz;-lpng16;-lm;-lz;-lm;-L/usr/lib/aarch64-linux-gnu;-L/usr/lib/aarch64-linux-gnu;-lz;-lbrotlidec;-L/usr/lib/aarch64-linux-gnu;-lbrotlicommon"
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-pthread;-pthread;-pthread"
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "SDL2_ttf;SDL2;m;asound;m;dl;pthread;pulse-simple;pulse;samplerate;X11;Xext;Xcursor;Xi;Xfixes;Xrandr;Xss;drm;gbm;wayland-egl;wayland-client;wayland-cursor;xkbcommon;decor-0;pthread;rt;harfbuzz;m;z;m;z;m;z;brotlicommon;graphite2;glib-2.0;m;pcre2-8;freetype;z;png16;m;z;m;z;brotlidec;brotlicommon"
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu"
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_STATIC_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "SDL2_TTF_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "2.20.1"
+		},
+		{
 			"name" : "SDL2_VERSION",
 			"properties" : 
 			[
@@ -1926,6 +2346,18 @@
 			"value" : "REQUIRED;SDL2_gfx"
 		},
 		{
+			"name" : "__pkg_config_arguments_SDL2_TTF",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "REQUIRED;SDL2_ttf"
+		},
+		{
 			"name" : "__pkg_config_checked_SDL2",
 			"properties" : 
 			[
@@ -1939,6 +2371,18 @@
 		},
 		{
 			"name" : "__pkg_config_checked_SDL2_GFX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "__pkg_config_checked_SDL2_TTF",
 			"properties" : 
 			[
 				{
@@ -1996,6 +2440,38 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/aarch64-linux-gnu/libSDL2.so"
+		},
+		{
+			"name" : "pkgcfg_lib_SDL2_TTF_SDL2",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/aarch64-linux-gnu/libSDL2.so"
+		},
+		{
+			"name" : "pkgcfg_lib_SDL2_TTF_SDL2_ttf",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/aarch64-linux-gnu/libSDL2_ttf.so"
 		},
 		{
 			"name" : "prefix_result",

@@ -19,9 +19,11 @@ public:
     float getVelocityX() const { return vx_; }
     float getVelocityY() const { return vy_; }
     
-    // Position getters for collision detection
+    // Position getters and setters
     float getX() const { return x_; }
     float getY() const { return y_; }
+    void setX(float x) { x_ = x; }
+    void setY(float y) { y_ = y; }
     int getWidth() const { return width_; }
     int getHeight() const { return height_; }
     

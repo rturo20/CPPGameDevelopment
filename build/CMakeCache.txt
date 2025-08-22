@@ -201,6 +201,12 @@ pkgcfg_lib_SDL2_GFX_SDL2_gfx:FILEPATH=/usr/lib/aarch64-linux-gnu/libSDL2_gfx.so
 //Path to a library.
 pkgcfg_lib_SDL2_SDL2:FILEPATH=/usr/lib/aarch64-linux-gnu/libSDL2.so
 
+//Path to a library.
+pkgcfg_lib_SDL2_TTF_SDL2:FILEPATH=/usr/lib/aarch64-linux-gnu/libSDL2.so
+
+//Path to a library.
+pkgcfg_lib_SDL2_TTF_SDL2_ttf:FILEPATH=/usr/lib/aarch64-linux-gnu/libSDL2_ttf.so
+
 //Value Computed by CMake
 sdl2_tiny_BINARY_DIR:STATIC=/home/pi/Code/cpp/GameDevelopment/SDL2006/build
 
@@ -413,6 +419,41 @@ SDL2_STATIC_LIBS:INTERNAL=
 SDL2_STATIC_LIBS_L:INTERNAL=
 SDL2_STATIC_LIBS_OTHER:INTERNAL=
 SDL2_STATIC_LIBS_PATHS:INTERNAL=
+SDL2_TTF_CFLAGS:INTERNAL=-I/usr/include/SDL2;-D_REENTRANT;-I/usr/include/harfbuzz;-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/glib-2.0;-I/usr/lib/aarch64-linux-gnu/glib-2.0/include
+SDL2_TTF_CFLAGS_I:INTERNAL=
+SDL2_TTF_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
+SDL2_TTF_FOUND:INTERNAL=1
+SDL2_TTF_INCLUDEDIR:INTERNAL=/usr/include
+SDL2_TTF_INCLUDE_DIRS:INTERNAL=/usr/include/SDL2;/usr/include/harfbuzz;/usr/include/freetype2;/usr/include/libpng16;/usr/include/glib-2.0;/usr/lib/aarch64-linux-gnu/glib-2.0/include
+SDL2_TTF_LDFLAGS:INTERNAL=-L/usr/lib/aarch64-linux-gnu;-lSDL2_ttf;-lSDL2
+SDL2_TTF_LDFLAGS_OTHER:INTERNAL=
+SDL2_TTF_LIBDIR:INTERNAL=/usr/lib/aarch64-linux-gnu
+SDL2_TTF_LIBRARIES:INTERNAL=SDL2_ttf;SDL2
+SDL2_TTF_LIBRARY_DIRS:INTERNAL=/usr/lib/aarch64-linux-gnu
+SDL2_TTF_LIBS:INTERNAL=
+SDL2_TTF_LIBS_L:INTERNAL=
+SDL2_TTF_LIBS_OTHER:INTERNAL=
+SDL2_TTF_LIBS_PATHS:INTERNAL=
+SDL2_TTF_MODULE_NAME:INTERNAL=SDL2_ttf
+SDL2_TTF_PREFIX:INTERNAL=/usr
+SDL2_TTF_SDL2_ttf_INCLUDEDIR:INTERNAL=
+SDL2_TTF_SDL2_ttf_LIBDIR:INTERNAL=
+SDL2_TTF_SDL2_ttf_PREFIX:INTERNAL=
+SDL2_TTF_SDL2_ttf_VERSION:INTERNAL=
+SDL2_TTF_STATIC_CFLAGS:INTERNAL=-I/usr/include/SDL2;-D_REENTRANT;-I/usr/include/harfbuzz;-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/glib-2.0;-I/usr/lib/aarch64-linux-gnu/glib-2.0/include
+SDL2_TTF_STATIC_CFLAGS_I:INTERNAL=
+SDL2_TTF_STATIC_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
+SDL2_TTF_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/SDL2;/usr/include/harfbuzz;/usr/include/freetype2;/usr/include/libpng16;/usr/include/glib-2.0;/usr/lib/aarch64-linux-gnu/glib-2.0/include
+SDL2_TTF_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/aarch64-linux-gnu;-lSDL2_ttf;-lSDL2;-lm;-lasound;-lm;-ldl;-lpthread;-lpulse-simple;-lpulse;-pthread;-lsamplerate;-lX11;-lXext;-lXcursor;-lXi;-lXfixes;-lXrandr;-lXss;-ldrm;-lgbm;-lwayland-egl;-lwayland-client;-lwayland-cursor;-lxkbcommon;-ldecor-0;-lpthread;-lrt;-L/usr/lib/aarch64-linux-gnu;-lharfbuzz;-pthread;-lm;-L/usr/lib/aarch64-linux-gnu;-L/usr/lib/aarch64-linux-gnu;-L/usr/lib/aarch64-linux-gnu;-lz;-lm;-lz;-lm;-L/usr/lib/aarch64-linux-gnu;-L/usr/lib/aarch64-linux-gnu;-lz;-L/usr/lib/aarch64-linux-gnu;-lbrotlicommon;-lgraphite2;-lglib-2.0;-pthread;-lm;-L/usr/lib/aarch64-linux-gnu;-lpcre2-8;-lfreetype;-L/usr/lib/aarch64-linux-gnu;-L/usr/lib/aarch64-linux-gnu;-lz;-lpng16;-lm;-lz;-lm;-L/usr/lib/aarch64-linux-gnu;-L/usr/lib/aarch64-linux-gnu;-lz;-lbrotlidec;-L/usr/lib/aarch64-linux-gnu;-lbrotlicommon
+SDL2_TTF_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread;-pthread
+SDL2_TTF_STATIC_LIBDIR:INTERNAL=
+SDL2_TTF_STATIC_LIBRARIES:INTERNAL=SDL2_ttf;SDL2;m;asound;m;dl;pthread;pulse-simple;pulse;samplerate;X11;Xext;Xcursor;Xi;Xfixes;Xrandr;Xss;drm;gbm;wayland-egl;wayland-client;wayland-cursor;xkbcommon;decor-0;pthread;rt;harfbuzz;m;z;m;z;m;z;brotlicommon;graphite2;glib-2.0;m;pcre2-8;freetype;z;png16;m;z;m;z;brotlidec;brotlicommon
+SDL2_TTF_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu
+SDL2_TTF_STATIC_LIBS:INTERNAL=
+SDL2_TTF_STATIC_LIBS_L:INTERNAL=
+SDL2_TTF_STATIC_LIBS_OTHER:INTERNAL=
+SDL2_TTF_STATIC_LIBS_PATHS:INTERNAL=
+SDL2_TTF_VERSION:INTERNAL=2.20.1
 SDL2_VERSION:INTERNAL=2.26.5
 SDL2_sdl2_INCLUDEDIR:INTERNAL=
 SDL2_sdl2_LIBDIR:INTERNAL=
@@ -422,13 +463,19 @@ SDL2_sdl2_VERSION:INTERNAL=
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 __pkg_config_arguments_SDL2:INTERNAL=REQUIRED;sdl2
 __pkg_config_arguments_SDL2_GFX:INTERNAL=REQUIRED;SDL2_gfx
+__pkg_config_arguments_SDL2_TTF:INTERNAL=REQUIRED;SDL2_ttf
 __pkg_config_checked_SDL2:INTERNAL=1
 __pkg_config_checked_SDL2_GFX:INTERNAL=1
+__pkg_config_checked_SDL2_TTF:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_SDL2_GFX_SDL2
 pkgcfg_lib_SDL2_GFX_SDL2-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_SDL2_GFX_SDL2_gfx
 pkgcfg_lib_SDL2_GFX_SDL2_gfx-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_SDL2_SDL2
 pkgcfg_lib_SDL2_SDL2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_TTF_SDL2
+pkgcfg_lib_SDL2_TTF_SDL2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_TTF_SDL2_ttf
+pkgcfg_lib_SDL2_TTF_SDL2_ttf-ADVANCED:INTERNAL=1
 prefix_result:INTERNAL=/usr/lib/aarch64-linux-gnu
 
