@@ -1,7 +1,33 @@
 #include <SDL2/SDL.h>
 #include <cstdlib>
+#include <vector>
+#include <random>
 #include "Ball.hpp"
 #include "CollisionSystem.hpp"
+
+// Helper function to create a random ball
+Ball createRandomBall(int screenWidth, int screenHeight) {
+    static std::random_device rd;
+    static std::mt19937 gen(rd());
+    
+    // Random position distributions
+    std::uniform_real_distribution<float> x_dist(50.0f, screenWidth - 50.0f);
+    std::uniform_real_distribution<float> y_dist(50.0f, screenHeight - 50.0f);
+    
+    // Random velocity distributions (-200 to 200)
+    std::uniform_real_distribution<float> vel_dist(-200.0f, 200.0f);
+    
+    // Random radius distribution (5 to 15)
+    std::uniform_int_distribution<int> radius_dist(5, 15);
+
+    // Random color distributions
+    std::uniform_int_distribution<int> color_dist(0, 255);
+    
+    return Ball(x_dist(gen), y_dist(gen),
+               vel_dist(gen), vel_dist(gen),
+               radius_dist(gen),  // Random radius between 5 and 15
+               color_dist(gen), color_dist(gen), color_dist(gen));
+}
 
 int main() {
     const int W = 640, H = 360;
@@ -17,11 +43,15 @@ int main() {
                           SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     if (!ren) return 3;
 
-    // Create ball instances with different colors
-    Ball ball1(W / 2.0f, H / 2.0f, 122.0f, 40.0f, 12,
-               0, 180, 255);  // Blue ball
-    Ball ball2((W / 2.0f) - 200, (H / 2.0f), - 40.0f, 20.0f, 12,
-               255, 100, 0);  // Orange ball
+    // Create a vector of balls with pre-allocated capacity
+    const int NUM_BALLS = 1;  // You can adjust this number
+    std::vector<Ball> balls;
+    balls.reserve(NUM_BALLS * 2);  // Reserve extra space for balls added via spacebar
+    
+    // Initialize balls with random positions, velocities, and colors
+    for (int i = 0; i < NUM_BALLS; ++i) {
+        balls.push_back(createRandomBall(W, H));
+    }
 
     Uint32 last = SDL_GetTicks();
     bool running = true;
@@ -31,7 +61,15 @@ int main() {
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
             if (e.type == SDL_QUIT) running = false;
-            if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE) running = false;
+            if (e.type == SDL_KEYDOWN) {
+                if (e.key.keysym.sym == SDLK_ESCAPE) {
+                    running = false;
+                } else if (e.key.keysym.sym == SDLK_SPACE) {
+                    // Add a new ball when spacebar is pressed
+                    balls.push_back(createRandomBall(W, H));
+                    printf("Balls: %zu, Capacity: %zu\n", balls.size(), balls.capacity());
+                }
+            }
         }
 
         // --- Update ---
@@ -39,24 +77,23 @@ int main() {
         float dt = (now - last) / 1000.0f;
         last = now;
 
-        ball1.update(dt);
-        ball2.update(dt);
-        
-        // Handle screen edge collisions
-        CollisionSystem::handleEdgeCollision(ball1, W, H);
-        CollisionSystem::handleEdgeCollision(ball2, W, H);
-        
-        // Check for collision between balls
-        if (CollisionSystem::checkBallCollision(ball1, ball2)) {
-            CollisionSystem::resolveBallCollision(ball1, ball2);
+        // Update all balls
+        for (Ball& ball : balls) {
+            ball.update(dt);
         }
+        
+        // Handle all collisions
+        CollisionSystem::handleAllEdgeCollisions(balls, W, H);
+        CollisionSystem::handleBallCollisions(balls);
 
         // --- Draw ---
-        SDL_SetRenderDrawColor(ren, 245, 245, 145, 255); // background
+        SDL_SetRenderDrawColor(ren, 245, 25, 145, 255); // background
         SDL_RenderClear(ren);
 
-        ball1.render(ren);
-        ball2.render(ren);
+        // Render all balls
+        for (const Ball& ball : balls) {
+            ball.render(ren);
+        }
 
         // HUD text is skipped to keep it minimal
 

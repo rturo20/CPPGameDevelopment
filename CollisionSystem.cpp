@@ -1,6 +1,24 @@
 #include "CollisionSystem.hpp"
 #include <cmath>
 
+void CollisionSystem::handleBallCollisions(std::vector<Ball>& balls) {
+    // Check each pair of balls for collisions
+    for (size_t i = 0; i < balls.size(); ++i) {
+        for (size_t j = i + 1; j < balls.size(); ++j) {
+            if (checkBallCollision(balls[i], balls[j])) {
+                resolveBallCollision(balls[i], balls[j]);
+            }
+        }
+    }
+}
+
+void CollisionSystem::handleAllEdgeCollisions(std::vector<Ball>& balls, int screenWidth, int screenHeight) {
+    // Handle screen edge collisions for all balls
+    for (Ball& ball : balls) {
+        handleEdgeCollision(ball, screenWidth, screenHeight);
+    }
+}
+
 bool CollisionSystem::checkBallCollision(const Ball& ball1, const Ball& ball2) {
     // Calculate distance between ball centers
     float dx = ball2.x_ - ball1.x_;
