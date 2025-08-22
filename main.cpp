@@ -1,6 +1,7 @@
 #include <SDL2/SDL.h>
 #include <cstdlib>
 #include "Ball.hpp"
+#include "Rectangle.hpp"
 #include "CollisionSystem.hpp"
 
 int main() {
@@ -17,9 +18,9 @@ int main() {
                           SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     if (!ren) return 3;
 
-    // Create ball instances with different colors
-    Ball ball1(W / 2.0f, H / 2.0f, 122.0f, 40.0f, 12,
-               0, 180, 255);  // Blue ball
+         // Create player rectangle and ball
+         Rectangle player(W / 2.0f, H / 2.0f, 0.0f, 0.0f, 15, 60,  // 15x60 paddle at center
+                     0, 180, 255);  // Blue rectangle
     Ball ball2((W / 2.0f) - 200, (H / 2.0f), - 40.0f, 20.0f, 12,
                255, 100, 0);  // Orange ball
 
@@ -31,7 +32,24 @@ int main() {
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
             if (e.type == SDL_QUIT) running = false;
-            if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE) running = false;
+                         if (e.type == SDL_KEYDOWN) {
+                 if (e.key.keysym.sym == SDLK_ESCAPE) {
+                     running = false;
+                 }
+                 // Control ball1 with arrow keys
+                 const float SPEED = 200.0f;
+                 switch (e.key.keysym.sym) {
+                     case SDLK_UP:    player.setVelocityY(-SPEED); break;
+                     case SDLK_DOWN:  player.setVelocityY(SPEED); break;
+                 }
+             }
+             // Stop ball1 when keys are released
+             else if (e.type == SDL_KEYUP) {
+                 switch (e.key.keysym.sym) {
+                     case SDLK_UP:    if (player.getVelocityY() < 0) player.setVelocityY(0); break;
+                     case SDLK_DOWN:  if (player.getVelocityY() > 0) player.setVelocityY(0); break;
+                 }
+             }
         }
 
         // --- Update ---
@@ -39,24 +57,25 @@ int main() {
         float dt = (now - last) / 1000.0f;
         last = now;
 
-        ball1.update(dt);
-        ball2.update(dt);
-        
-        // Handle screen edge collisions
-        CollisionSystem::handleEdgeCollision(ball1, W, H);
-        CollisionSystem::handleEdgeCollision(ball2, W, H);
-        
-        // Check for collision between balls
-        if (CollisionSystem::checkBallCollision(ball1, ball2)) {
-            CollisionSystem::resolveBallCollision(ball1, ball2);
-        }
+                 player.update(dt);
+         ball2.update(dt);
+         
+         // Keep player within screen bounds (vertical only)
+         if (player.getY() - player.getHeight()/2 < 0) player.setVelocityY(0);
+         if (player.getY() + player.getHeight()/2 > H) player.setVelocityY(0);
+         
+         // Handle ball edge collisions
+         CollisionSystem::handleEdgeCollision(ball2, W, H);
+         
+         // Check for collision between paddle and ball
+         player.checkAndResolveCollision(ball2);
 
         // --- Draw ---
         SDL_SetRenderDrawColor(ren, 245, 245, 145, 255); // background
         SDL_RenderClear(ren);
 
-        ball1.render(ren);
-        ball2.render(ren);
+                 player.render(ren);
+         ball2.render(ren);
 
         // HUD text is skipped to keep it minimal
 

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/sdl_bounce.dir/main.cpp.o CMakeFiles/sdl_bounce.dir/Ball.cpp.o CMakeFiles/sdl_bounce.dir/CollisionSystem.cpp.o -o sdl_bounce  -lSDL2 -lSDL2_gfx -lSDL2 -lSDL2_gfx 
+/usr/bin/c++ CMakeFiles/sdl_bounce.dir/main.cpp.o CMakeFiles/sdl_bounce.dir/Ball.cpp.o CMakeFiles/sdl_bounce.dir/Rectangle.cpp.o CMakeFiles/sdl_bounce.dir/CollisionSystem.cpp.o -o sdl_bounce  -lSDL2 -lSDL2_gfx -lSDL2 -lSDL2_gfx 

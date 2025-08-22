@@ -11,6 +11,8 @@ add_executable(sdl_bounce
     main.cpp
     Ball.cpp
     Ball.hpp
+    Rectangle.cpp
+    Rectangle.hpp
     CollisionSystem.cpp
     CollisionSystem.hpp)
 target_include_directories(sdl_bounce PRIVATE ${SDL2_INCLUDE_DIRS} ${SDL2_GFX_INCLUDE_DIRS})

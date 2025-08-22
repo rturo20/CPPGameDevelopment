@@ -177,6 +177,30 @@ CollisionSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl_bounce.dir/build.make CMakeFiles/sdl_bounce.dir/CollisionSystem.cpp.s
 .PHONY : CollisionSystem.cpp.s
 
+Rectangle.o: Rectangle.cpp.o
+.PHONY : Rectangle.o
+
+# target to build an object file
+Rectangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl_bounce.dir/build.make CMakeFiles/sdl_bounce.dir/Rectangle.cpp.o
+.PHONY : Rectangle.cpp.o
+
+Rectangle.i: Rectangle.cpp.i
+.PHONY : Rectangle.i
+
+# target to preprocess a source file
+Rectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl_bounce.dir/build.make CMakeFiles/sdl_bounce.dir/Rectangle.cpp.i
+.PHONY : Rectangle.cpp.i
+
+Rectangle.s: Rectangle.cpp.s
+.PHONY : Rectangle.s
+
+# target to generate assembly for a file
+Rectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl_bounce.dir/build.make CMakeFiles/sdl_bounce.dir/Rectangle.cpp.s
+.PHONY : Rectangle.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... CollisionSystem.o"
 	@echo "... CollisionSystem.i"
 	@echo "... CollisionSystem.s"
+	@echo "... Rectangle.o"
+	@echo "... Rectangle.i"
+	@echo "... Rectangle.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

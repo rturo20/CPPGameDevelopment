@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sdl_bounce.dir/Ball.cpp.o.d"
   "CMakeFiles/sdl_bounce.dir/CollisionSystem.cpp.o"
   "CMakeFiles/sdl_bounce.dir/CollisionSystem.cpp.o.d"
+  "CMakeFiles/sdl_bounce.dir/Rectangle.cpp.o"
+  "CMakeFiles/sdl_bounce.dir/Rectangle.cpp.o.d"
   "CMakeFiles/sdl_bounce.dir/main.cpp.o"
   "CMakeFiles/sdl_bounce.dir/main.cpp.o.d"
   "sdl_bounce"

@@ -12,6 +12,20 @@ public:
     void update(float dt);
     void render(SDL_Renderer* renderer) const;
     
+    // Velocity control methods
+    void setVelocityX(float vx) { vx_ = vx; }
+    void setVelocityY(float vy) { vy_ = vy; }
+    float getVelocityX() const { return vx_; }
+    float getVelocityY() const { return vy_; }
+    
+    // Position and size getters
+    float getX() const { return x_; }
+    float getY() const { return y_; }
+    int getRadius() const { return radius_; }
+    
+    // Position setter
+    void setX(float x) { x_ = x; }
+    
     // Give CollisionSystem access to the Ball class's private members
     friend class CollisionSystem;  
     
